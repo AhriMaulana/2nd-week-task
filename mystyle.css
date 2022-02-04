@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  background: #f4f3f3;
+  height: 7vh;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  flex: 50%;
+}
+
+nav div.left-side {
+  padding-left: 90px;
+}
+
+nav div.right-side {
+  padding-right: 90px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  color: #040149;
+  text-decoration: none;
+}
+
+nav ul li a.list-active {
+  color: #040149;
+  font-weight: 400;
+}
+
+nav .right-side a {
+  font-size: 15px;
+  padding: 8px 20px;
+  background-color: #040149;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* blog form */
+.blog-form{
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  background-color: #E1DEDE;
+}
+
+.blog-form .form-container{
+  width: 500px;
+}
+
+.form-container form h1{
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.blog-form form label{
+  font-size: 20px;
+  font-weight: 400px;
+}
+
+.blog-form form input, textarea{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #c4c4c4; 
+  border-radius: 10px;
+  background: #f4f3f3;
+}
+
+.blog-form .date{
+  margin-top: 30px;
+  display: flex;
+  width: 250px;
+}
+
+.blog-form .description{
+  margin-top: 30px;
+}
+
+.blog-form .label-tech{
+  margin-top: 30px;
+}
+
+.blog-form .label-upload{
+  margin-top: 20px;
+}
+
+.blog-form .date .start input{
+  width: 240px;
+  margin-right: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.blog-form .date .end input{
+  width: 240px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.blog-form .tech{
+  display: flex;
+}
+
+.blog-form .tech .kiri{
+  margin: 20px 30px 20px 0px;
+}
+
+.blog-form .tech .kanan{
+  margin: 20px 30px 20px 0px;
+}
+
+.blog-form .tech input{
+  width: 20px;
+  height: 20px;
+}
+
+.blog-form .image-group{
+  background-image: src="assets/file.png" alt="file";
+}
+
+.blog-form form .input-blog-image-group {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.blog-form form .input-blog-image-group .inner{
+  width: 68px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+}
+
+.blog-form form .input-blog-image-group label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-form form .button button{
+  width: 75px;
+  height: 40px;
+  border-radius: 20px;
+  border: hidden;
+  background-color: #040149;
+  font-size: 18px;
+  color: #f4f3f3;
+}
+
+.blog-form form .button{
+  text-align: right;
+  margin-top: 30px;
+}
+
+/* blog list */
+
+.blog .blog-list {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.blog .judul-list h1{
+  margin-top: 80px;
+  text-align: center;
+}
+
+.blog .blog-list .blog-list-item {
+  width: 400px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #dbdbdb;
+  border-radius: 8px;
+  margin-left: 50px;
+  
+}
+
+.blog .blog-list .blog-list-item .blog-image {
+  flex: 1;
+}
+
+.blog .blog-list .blog-list-item .blog-image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blog .blog-list .blog-list-item .blog-content {
+  flex: 2;
+}
+
+.blog .blog-list .btn-group {
+  display: flex;
+  margin-top: 40px;
+}
+
+.blog .blog-list .btn-group .btn-edit {
+  margin-right: 10px;
+  height: 30px;
+  width: 180px;
+  padding: 5px 0px;
+  border: 0;
+  border-radius: 10px;
+  background: #040149;
+  color: #fff;
+  font-size: 18px;
+}
+
+.blog .blog-list .btn-group .btn-delete {
+  height: 30px;
+  width: 180px;
+  border: 0;
+  border-radius: 10px;
+  background: #040149;
+  color: #fff;
+  font-size: 18px;
+}
+
+.blog .blog-list p a {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+.blog .blog-list .detail-blog-content {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.blog .blog-list .blog-list-item p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.blog .icon-tech img{
+  margin-top: 40px;
+  width: 30px;
+  height: 30px;
+}
+
+/* blog detail */
+
+.blog-detail {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-detail .blog-detail-container .atas{
+  margin-top: 80px;
+  display: flex;
+}
+
+.blog-detail-container .content p{
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+.blog-detail-container h1{
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.blog-detail-container {
+  width: 80%;
+} 
+
+.blog-detail-container .kiri img {
+  width: 700px;
+  height: 450px;
+  margin-right: 80px;
+}
+
+.duration p{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.blog-detail-container .kanan .technologies .display-tech{
+  display: flex;
+}
+
+.technologies p{
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.display-tech .tech-kanan{
+  margin-left: 50px;
+}
+
+.kanan .duration .icon .we{
+  display: flex;
+}
+
+.kanan .duration .icon .me{
+  display: flex;
+}
+
+.duration label{
+  padding: 6px 10px;
+  float: right;
+}
+
+.display-tech label{
+  padding: 6px 10px;
+  float: right;
+}
+
+.blog-detail-container h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+}
+
+.blog-detail .technologies img{
+  width: 30px;
+  height: 30px;
+}
+
+.blog-detail .duration img{
+  width: 30px;
+  height: 30px;
+}
