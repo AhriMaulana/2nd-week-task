@@ -48,22 +48,22 @@
             </div>
             <div class="description">
                <label for="description">Description</label>
-               <textarea name="description"></textarea>
+               <input id="description"></input>
             </div>
             <div class="label-tech">
               <label>Technologies</label>
             </div>
             <div class="tech">
               <div class="kiri">
-                <input type="checkbox" id="node-js">
+                <input type="checkbox" value="assets/node.png" id="node-js">
                 <label for="node-js">Node Js</label><br/><br/>
-                <input type="checkbox" id="react-js">
+                <input type="checkbox" value="assets/java.png" id="next-js">
                 <label for="next-js">Next Js</label>
               </div>
               <div class="kanan">
-                <input type="checkbox" id="next-js">
+                <input type="checkbox" value="assets/react.png" id="react-js">
                 <label for="react-js">React Js</label><br/><br/>
-                <input type="checkbox" id="typescript">
+                <input type="checkbox" value="assets/ts.png" id="typescript">
                 <label for="typecript">TypeScript</label>
               </div>
             </div>
@@ -107,10 +107,11 @@
               App that usedfor dumbways student, it was deployed and can downloaded on playstore. Happy download
             </p>
 
-            <div class="icon-tech">
-              <img src="assets/linkedin.png" alt="logo">
-              <img src="assets/twitter.png" alt="logo">
-              <img src="assets/whatsapp.png" alt="logo">
+            <div class="icon-tech" id="icon">
+              <img src="assets/node.png" >
+              <img src="assets/react.png" >
+              <img src="assets/java.png" >
+              <img src="assets/ts.png" >
             </div>
 
             <div class="btn-group">
@@ -120,6 +121,8 @@
           </div>
         </div>
       </div>
+      <!--end inner-->
     </div>
+    <script src="blog.js"></script>
 </body>
 </html>

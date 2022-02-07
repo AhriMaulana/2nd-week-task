@@ -80,7 +80,8 @@ nav .right-side a {
   font-weight: 400px;
 }
 
-.blog-form form input, textarea{
+.blog-form form input{
+  padding-left: 10px;
   width: 100%;
   height: 40px;
   border: 1px solid #c4c4c4; 
@@ -121,6 +122,10 @@ nav .right-side a {
 
 .blog-form .tech{
   display: flex;
+}
+
+.blog-form .tech label {
+  font-size: 20px;
 }
 
 .blog-form .tech .kiri{
